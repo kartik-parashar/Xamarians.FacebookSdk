@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="15" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="Sample">
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="Facebook Login" android:name="com.facebook.FacebookActivity" />
+    <provider android:authorities="com.facebook.app.FacebookContentProvider337313133330855" android:name="com.facebook.FacebookContentProvider" android:exported="true" />
+	</application>
+</manifest>

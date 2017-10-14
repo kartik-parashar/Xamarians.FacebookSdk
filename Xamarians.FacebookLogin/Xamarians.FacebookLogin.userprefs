@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{FCA4FC7E-496C-40EA-A6AE-FA81C19EFE47}|Default">
+  <MonoDevelop.Ide.ItemProperties.Sample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.aff365ee23e750ddf54139b394f31818b89356a0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs">
+    <Files>
+      <File FileName="Sample/Sample.iOS/AppDelegate.cs" Line="24" Column="40" />
+      <File FileName="Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" Line="108" Column="1" />
+      <File FileName="Sample/Sample/MainPage.xaml.cs" Line="25" Column="1" />
+      <File FileName="Sample/Sample.iOS/Info.plist" />
+      <File FileName="Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Sample/Sample/MainPage.xaml.cs" relfile="Sample/Sample/MainPage.xaml.cs" line="23" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" line="69" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Sample/Sample/MainPage.xaml.cs" relfile="Sample/Sample/MainPage.xaml.cs" line="25" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" line="146" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" line="64" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" line="108" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FacebookLogin.cs" line="125" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" line="18" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" line="23" column="1" />
+      <Breakpoint file="/Users/arjun/Documents/GIT/Xamarians.FacebookLogin/Xamarians.FacebookLogin/Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" relfile="Xamarians.FacebookLogin.iOS/DS/FbDelegate.cs" line="28" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../GIT/funeral-solutions/FuneralSolutions/FuneralSolutions/FuneralSolutions.iOS/Platforms/IOSNavigationBar.cs" line="61" offsetX="780" offsetY="799" expression="icon" liveUpdate="True" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Xamarians.FacebookLogin.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>

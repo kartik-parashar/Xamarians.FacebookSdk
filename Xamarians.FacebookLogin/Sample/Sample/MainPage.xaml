@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Sample"
+             x:Class="Sample.MainPage">
+    <StackLayout VerticalOptions="Center" Padding="10">
+        <Button Text="Sign In" BackgroundColor="Aqua" Clicked="FbSignInClicked"></Button>
+        <Button Text="Sign Out" BackgroundColor="Aqua" Clicked="FbSignOutClicked"></Button>
+        <Button Text="Share Image on Facebook" BackgroundColor="Aqua" Clicked="FbImageShareClicked"></Button>
+        <Button Text="Share Text on Facebook" BackgroundColor="Aqua" Clicked="FbTextShareClicked"></Button>
+        <Button Text="Share Link on Facebook" BackgroundColor="Aqua" Clicked="FbLinkShareClicked"></Button>
+    </StackLayout>
+</ContentPage>
