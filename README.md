@@ -71,14 +71,11 @@ iOS - in AppDelegate file write below code -
 
 ```c#
  Xamarians.FacebookLogin.iOS.DS.FacebookLogin.Init();
- Xamarians.Media.iOS.MediaServiceIOS.Initialize();
 ```
 
 iOS - Add following permissions in the info.plist
 
 ```
-<key>NSCameraUsageDescription</key>
-	<string>This app needs access to the camera to take photos.</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>FacebookAppID</key>
@@ -112,14 +109,12 @@ iOS - Add following permissions in the info.plist
   Android - in Mainactivity file write the below code
   
   ```
-  Xamarians.Media.Droid.MediaServiceAndroid.Initialize();
   Xamarians.FacebookLogin.Droid.DS.FacebookLogin.Init("your-facebook-app-id");
   ```
   Add the following permissions in Android Manifest file
 ```
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <uses-permission android:name="android.permission.CAMERA" />
   <uses-permission android:name="android.permission.INTERNET" />
   
 ```
