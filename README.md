@@ -53,15 +53,7 @@ Add this to call the facebook sdk functions
 
         private async void FbImageShareClicked(object sender, EventArgs e)
         {
-            string filePath = GenerateFilePath();
-            var result = await MediaService.Instance.TakePhotoAsync(new CameraOption()
-            {
-                FilePath = filePath,
-                MaxWidth = 300,
-                MaxHeight = 300
-            });
-            await Task.Delay(1000);
-            DependencyService.Get<IFacebookLogin>().ShareImageOnFacebook("Hi, This is demo text", result.FilePath);
+            DependencyService.Get<IFacebookLogin>().ShareImageOnFacebook("Hi, This is demo text", "image-filePath");
         }
 
         private void FbTextShareClicked(object sender, EventArgs e)
