@@ -29,7 +29,7 @@ namespace Xamarians.FacebookLogin.iOS.DS
             ShowPopUp("Success", error.Description, null, "Ok", null);
         }
 
-        public void ShowPopUp(string title, string message, IUIAlertViewDelegate del, string cancelButtonTitle, string[] otherButton)
+        public void ShowPopUp(string title, string message, UIAlertViewDelegate del, string cancelButtonTitle, string[] otherButton)
         {
             alert = new UIAlertView(title, message, del, cancelButtonTitle, otherButton);
             alert.Show();

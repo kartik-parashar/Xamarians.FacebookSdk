@@ -6,8 +6,8 @@
   <uses-permission android:name="android.permission.CAMERA" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:label="Sample">
-		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
+		<meta-data android:name="com.facebook.sdk.ApplicationId" android:value="fb-app-id" />
 		<activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:label="Facebook Login" android:name="com.facebook.FacebookActivity" />
-    <provider android:authorities="com.facebook.app.FacebookContentProvider337313133330855" android:name="com.facebook.FacebookContentProvider" android:exported="true" />
+    <provider android:authorities="com.facebook.app.FacebookContentProvider[fb-app-id]" android:name="com.facebook.FacebookContentProvider" android:exported="true" />
 	</application>
 </manifest>

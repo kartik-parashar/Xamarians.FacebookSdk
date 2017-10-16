@@ -31,7 +31,7 @@
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>FacebookAppID</key>
-	<string>337313133330855</string>
+	<string>fb-app-id</string>
 	<key>FacebookDisplayName</key>
 	<string>Truest</string>
 	<key>LSApplicationQueriesSchemes</key>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb337313133330855</string>
+				<string>fb[fb-app-id]</string>
 			</array>
 		</dict>
 	</array>
