@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarians.FacebookLogin;
 using Xamarin.Forms;
 using System.IO;
 using Xamarians.Media;
-#if __ANDROID__
-using Newtonsoft.Json;
-#endif
-using Xamarians.FacebookLogin.Platforms;
 
 namespace Sample
 {
-	public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
 	{
 		public MainPage()
 		{
@@ -29,16 +22,9 @@ namespace Sample
         private async void FbSignInClicked(object sender, EventArgs e)
         {
             var result = await DependencyService.Get<IFacebookLogin>().SignIn();
-            if(result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
+            if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
             {
-#if __ANDROID__
-                var userDetails = JsonConvert.DeserializeObject<FbLoginResult>(result.JsonData);
-                await DisplayAlert("Success", "Welcome" + userDetails.Name, "Ok");
-#endif
-#if __IOS__
-                await DisplayAlert("Success", "Welcome" + result.Name, "Ok");
-#endif
-
+                await DisplayAlert("Success", "Welcome " + result.Name, "Ok");
             }
             else
             {

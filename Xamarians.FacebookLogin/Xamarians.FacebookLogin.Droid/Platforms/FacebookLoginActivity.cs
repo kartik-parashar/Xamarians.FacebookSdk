@@ -6,6 +6,7 @@ using Xamarin.Facebook;
 using Xamarin.Facebook.Login;
 using Xamarians.FacebookLogin.Platforms;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Xamarians.FacebookLogin.Droid.Platforms
 {
@@ -101,6 +102,7 @@ namespace Xamarians.FacebookLogin.Droid.Platforms
                 }
                 else
                 {
+                    var userInfo = JsonConvert.DeserializeObject<FbLoginResult>(jsonData);
                     fbActivityComplete.SetResult(new FbLoginResult
                     {
                         ApplicationId = AccessToken.CurrentAccessToken.ApplicationId,
@@ -108,7 +110,8 @@ namespace Xamarians.FacebookLogin.Droid.Platforms
                         AccessToken = AccessToken.CurrentAccessToken.Token,
                         Status = status,
                         Message = message,
-                        JsonData = jsonData
+                        Name = userInfo.Name,
+                        Email = userInfo.Email,
                     });
                 }
 

@@ -21,7 +21,7 @@ namespace Sample.Droid
 
 			global::Xamarin.Forms.Forms.Init (this, bundle);
             Xamarians.Media.Droid.MediaServiceAndroid.Initialize();
-            Xamarians.FacebookLogin.Droid.DS.FacebookLogin.Init("fb-app-id");
+            Xamarians.FacebookLogin.Droid.DS.FacebookLogin.Init("your-fb-app-id");
 
 			LoadApplication (new Sample.App ());
 		}
