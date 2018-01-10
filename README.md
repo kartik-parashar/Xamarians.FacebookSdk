@@ -20,16 +20,9 @@ Add this to call the facebook sdk functions
         private async void FbSignInClicked(object sender, EventArgs e)
         {
             var result = await DependencyService.Get<IFacebookLogin>().SignIn();
-            if(result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
+            if (result.Status == Xamarians.FacebookLogin.Platforms.FBStatus.Success)
             {
-#if __ANDROID__
-                var userDetails = JsonConvert.DeserializeObject<FbLoginResult>(result.JsonData);
-                await DisplayAlert("Success", "Welcome" + userDetails.Name, "Ok");
-#endif
-#if __IOS__
-                await DisplayAlert("Success", "Welcome" + result.Name, "Ok");
-#endif
-
+                await DisplayAlert("Success", "Welcome " + result.Name, "Ok");
             }
             else
             {
