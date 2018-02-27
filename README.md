@@ -64,6 +64,11 @@ iOS - in AppDelegate file write below code -
 
 ```c#
  Xamarians.FacebookLogin.iOS.DS.FacebookLogin.Init();
+ 
+  public override bool OpenUrl(UIApplication application, NSUrl url, string sourceApplication, NSObject annotation)
+  {
+      return ApplicationDelegate.SharedInstance.OpenUrl(application, url, sourceApplication, annotation);
+  }
 ```
 
 iOS - Add following permissions in the info.plist
@@ -98,7 +103,7 @@ iOS - Add following permissions in the info.plist
 		<true/>
 	</dict>
   ```
-  
+ 
   Android - in Mainactivity file write the below code
   
   ```
